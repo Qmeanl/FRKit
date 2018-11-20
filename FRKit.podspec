@@ -8,7 +8,10 @@ Pod::Spec.new do |s|
                     2、Categories：通用类拓展
                     2、Functional：通用View控件
                     DESC
-   s.platform = :ios, "9.0"
+  s.author        = { "huangxiaohua" => "a654543430@126.com" }
+  s.homepage     = "https://github.com/Qmeanl/FRKit"
+  s.license      = { :type => "MIT", :file => "LICENSE" }
+  s.platform = :ios, "9.0"
   s.source       = { :git => "https://github.com/Qmeanl/FRKit.git", :tag =>"0.0.1" }
   s.source_files  = "FRKit", "FRKit/**/*.{h,m}"
 end

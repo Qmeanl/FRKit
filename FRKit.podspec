@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author        = { "Qmeanl" => "a654543430@126.com" }
   s.homepage     = "https://github.com/Qmeanl/FRKit"
   s.license      = { :type => "MIT", :file => "LICENSE" }
-  s.platform = :ios, "9.0"
+  s.platform       = :ios, "9.0"
   s.source       = { :git => "https://github.com/Qmeanl/FRKit.git", :tag =>"0.0.1" }
-  #s.source_files  = "FRKit", "FRKit/**/*.{h,m}"
+  
 end

@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.platform = :ios, "9.0"
   s.source       = { :git => "https://github.com/Qmeanl/FRKit.git", :tag =>"0.0.1" }
-  s.source_files  = "FRKit", "FRKit/**/*.{h,m}"
+  #s.source_files  = "FRKit", "FRKit/**/*.{h,m}"
 end

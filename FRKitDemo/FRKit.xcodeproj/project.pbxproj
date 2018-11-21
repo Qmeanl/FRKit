@@ -152,8 +152,8 @@
 		60E14CD421A51B02009C2F71 /* FRActionSheet */ = {
 			isa = PBXGroup;
 			children = (
-				60E14CD521A51B02009C2F71 /* FRActionSheet.m */,
 				60E14CD621A51B02009C2F71 /* FRActionSheet.h */,
+				60E14CD521A51B02009C2F71 /* FRActionSheet.m */,
 			);
 			path = FRActionSheet;
 			sourceTree = "<group>";

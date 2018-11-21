@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "FRFunctional.h"
 
 @interface ViewController ()
 

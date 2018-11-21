@@ -123,10 +123,10 @@
 		60E14CCD21A51B02009C2F71 /* FRFunctional */ = {
 			isa = PBXGroup;
 			children = (
+				60E14CD721A51B02009C2F71 /* FRFunctional.h */,
 				60E14CCE21A51B02009C2F71 /* FRUIUtitlity */,
 				60E14CD121A51B02009C2F71 /* FRSign */,
 				60E14CD421A51B02009C2F71 /* FRActionSheet */,
-				60E14CD721A51B02009C2F71 /* FRFunctional.h */,
 			);
 			path = FRFunctional;
 			sourceTree = "<group>";
@@ -134,8 +134,8 @@
 		60E14CCE21A51B02009C2F71 /* FRUIUtitlity */ = {
 			isa = PBXGroup;
 			children = (
-				60E14CCF21A51B02009C2F71 /* FRUIUtility.m */,
 				60E14CD021A51B02009C2F71 /* FRUIUtility.h */,
+				60E14CCF21A51B02009C2F71 /* FRUIUtility.m */,
 			);
 			path = FRUIUtitlity;
 			sourceTree = "<group>";
@@ -143,8 +143,8 @@
 		60E14CD121A51B02009C2F71 /* FRSign */ = {
 			isa = PBXGroup;
 			children = (
-				60E14CD221A51B02009C2F71 /* FRSign.m */,
 				60E14CD321A51B02009C2F71 /* FRSign.h */,
+				60E14CD221A51B02009C2F71 /* FRSign.m */,
 			);
 			path = FRSign;
 			sourceTree = "<group>";
@@ -152,8 +152,8 @@
 		60E14CD421A51B02009C2F71 /* FRActionSheet */ = {
 			isa = PBXGroup;
 			children = (
-				60E14CD621A51B02009C2F71 /* FRActionSheet.h */,
 				60E14CD521A51B02009C2F71 /* FRActionSheet.m */,
+				60E14CD621A51B02009C2F71 /* FRActionSheet.h */,
 			);
 			path = FRActionSheet;
 			sourceTree = "<group>";
@@ -161,8 +161,8 @@
 		60E14CD821A51B02009C2F71 /* FRCategories */ = {
 			isa = PBXGroup;
 			children = (
-				60E14CD921A51B02009C2F71 /* UIKit */,
 				60E14CE121A51B02009C2F71 /* FRCategories.h */,
+				60E14CD921A51B02009C2F71 /* UIKit */,
 			);
 			path = FRCategories;
 			sourceTree = "<group>";
@@ -170,9 +170,9 @@
 		60E14CD921A51B02009C2F71 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				60E14CE021A51B02009C2F71 /* UIKit+FRCategories.h */,
 				60E14CDA21A51B02009C2F71 /* UIImage */,
 				60E14CDD21A51B02009C2F71 /* UIWindow */,
-				60E14CE021A51B02009C2F71 /* UIKit+FRCategories.h */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";

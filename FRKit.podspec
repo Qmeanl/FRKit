@@ -55,10 +55,10 @@ Pod::Spec.new do |s|
           ss.source_files = "FRKit/FRCategories/UIKit/UIWindow/*.{h,m}"
         end
 
-       # UIColor
-        uikit.subspec 'UIColor' do |ss|
-          ss.source_files = "FRKit/FRCategories/UIKit/UIColor/*.{h,m}"
-        end
+       # UIImage
+         uikit.subspec 'UIImage' do |ss|
+          ss.source_files = "FRKit/FRCategories/UIKit/UIImage/*.{h,m}"
+         end
      end
 
 

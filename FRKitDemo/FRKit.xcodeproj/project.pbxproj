@@ -122,7 +122,7 @@
 		60E14C9221A4FFFF009C2F71 /* FRFunctional */ = {
 			isa = PBXGroup;
 			children = (
-				60E14C9321A4FFFF009C2F71 /* FEActionSheet */,
+				60E14C9321A4FFFF009C2F71 /* FRActionSheet */,
 				60E14C9621A4FFFF009C2F71 /* FRUIUtitlity */,
 				60E14C9921A4FFFF009C2F71 /* FRSign */,
 				60E14C9C21A4FFFF009C2F71 /* FRFunctional.h */,
@@ -130,13 +130,13 @@
 			path = FRFunctional;
 			sourceTree = "<group>";
 		};
-		60E14C9321A4FFFF009C2F71 /* FEActionSheet */ = {
+		60E14C9321A4FFFF009C2F71 /* FRActionSheet */ = {
 			isa = PBXGroup;
 			children = (
 				60E14C9421A4FFFF009C2F71 /* FRActionSheet.m */,
 				60E14C9521A4FFFF009C2F71 /* FRActionSheet.h */,
 			);
-			path = FEActionSheet;
+			path = FRActionSheet;
 			sourceTree = "<group>";
 		};
 		60E14C9621A4FFFF009C2F71 /* FRUIUtitlity */ = {

@@ -1,6 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "FRKit"
   s.version      = "0.0.1"
+  s.platform       = :ios, "9.0"
   s.summary      = "iOS开发基础组件库"
   s.description  = <<-DESC
                     iOS开发基础组件库，主要包含以下内容：
@@ -11,7 +12,6 @@ Pod::Spec.new do |s|
   s.author        = { "Qmeanl" => "a654543430@126.com" }
   s.homepage     = "https://github.com/Qmeanl/FRKit"
   s.license      = { :type => "MIT", :file => "LICENSE" }
-  s.platform       = :ios, "9.0"
-  s.source       = { :git => "https://github.com/Qmeanl/FRKit.git", :tag =>"0.0.1" }
+  s.source       = { :git => "https://github.com/Qmeanl/FRKit.git", :tag =>s.version }
   
 end

@@ -29,8 +29,6 @@ Pod::Spec.new do |s|
     # FRUIUtility
     founc.subspec 'FRUIUtility' do |ss|
       ss.source_files = "FRKit/FRFunctional/FRUIUtitlity/*.{h,m}"
-      ss.dependency "FRKit/FRCategories/UIKit/UIWindow"
-
     end
 
   end

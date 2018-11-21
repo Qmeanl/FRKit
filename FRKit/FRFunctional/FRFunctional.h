@@ -10,5 +10,5 @@
 #define FRFunctional_h
 #import "FRActionSheet.h"
 #import "FRUIUtility.h"
-
+#import "FRSign.h"
 #endif /* FRFunctional_h */

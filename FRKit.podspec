@@ -16,6 +16,11 @@ Pod::Spec.new do |s|
   s.public_header_files = "FRKit/FRKit.h"
   s.source_files = "FRKit/FRKit.h"
 
+  # 通用宏定义、快捷方法
+  s.subspec 'FRShortcut' do |shortcut|
+    shortcut.source_files = "FRKit/FRShortcut/*.{h,m}"
+  end
+
  # 基础控件
   s.subspec 'FRFunctional' do |founc|
     founc.public_header_files = "FRKit/FRFunctional/FRFunctional.h"
@@ -29,7 +34,33 @@ Pod::Spec.new do |s|
     # FRUIUtility
     founc.subspec 'FRUIUtility' do |ss|
       ss.source_files = "FRKit/FRFunctional/FRUIUtitlity/*.{h,m}"
+      ss.dependency "FRKit/FRCategories/UIKit/UIWindow"
     end
+
+  end
+
+
+ # 通用宏定义、快捷方法
+  s.subspec 'FRCategories' do |categories|
+    categories.public_header_files = "FRKit/FRCategories/FRCategories.h"
+    categories.source_files = "FRKit/FRCategories/FRCategories.h"
+
+     # UIKit
+     categories.subspec 'UIKit' do |uikit|
+       uikit.public_header_files = 'FRKit/FRCategories/UIKit/UIKit+FRCategories.h'
+       uikit.source_files = 'FRKit/FRCategories/UIKit/UIKit+FRCategories.h'
+
+       # UIWindow
+        uikit.subspec 'UIWindow' do |ss|
+          ss.source_files = "FRKit/FRCategories/UIKit/UIWindow/*.{h,m}"
+        end
+
+       # UIColor
+        uikit.subspec 'UIColor' do |ss|
+          ss.source_files = "FRKit/FRCategories/UIKit/UIColor/*.{h,m}"
+        end
+     end
+
 
   end
 

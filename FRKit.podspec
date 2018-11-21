@@ -13,8 +13,8 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/Qmeanl/FRKit"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.source       = { :git => "https://github.com/Qmeanl/FRKit.git", :tag =>s.version }
-  s.public_header_files = "FRKit/FRKit.h"
-  s.source_files = "FRKit/FRKit.h"
+  s.public_header_files = "FRKit/FRKit/FRKit.h"
+  s.source_files = "FRKit/FRKit/FRKit.h"
 
  # 基础控件
   s.subspec 'FRFunctional' do |founc|

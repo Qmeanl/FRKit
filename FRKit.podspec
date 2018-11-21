@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FRKit"
-  s.version      = "0.0.13"
+  s.version      = "0.0.14"
   s.platform       = :ios, "7.0"
   s.summary      = "iOS开发基础组件库"
   s.description  = <<-DESC
@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
    
     # TLUIUtility
     founc.subspec 'FRUIUtility' do |ss|
-      ss.source_files = "FRKit/FRFunctional/FRUIUtility/*.{h,m}"
+      ss.source_files = "FRKit/FRFunctional/FRUIUtitlity/*.{h,m}"
     end
 
   end

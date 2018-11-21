@@ -13,6 +13,11 @@
 		60E14C5421A4F4BD009C2F71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60E14C5321A4F4BD009C2F71 /* Assets.xcassets */; };
 		60E14C5721A4F4BD009C2F71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E14C5521A4F4BD009C2F71 /* LaunchScreen.storyboard */; };
 		60E14C5A21A4F4BD009C2F71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E14C5921A4F4BD009C2F71 /* main.m */; };
+		60E14C7821A4F563009C2F71 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E14C6521A4F563009C2F71 /* UIImage+Color.m */; };
+		60E14C7921A4F563009C2F71 /* UIWindow+FRWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E14C6821A4F563009C2F71 /* UIWindow+FRWindow.m */; };
+		60E14C7A21A4F563009C2F71 /* FRActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E14C6E21A4F563009C2F71 /* FRActionSheet.m */; };
+		60E14C7B21A4F563009C2F71 /* FRUIUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E14C7121A4F563009C2F71 /* FRUIUtility.m */; };
+		60E14C7C21A4F563009C2F71 /* FRSign.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E14C7421A4F563009C2F71 /* FRSign.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,20 @@
 		60E14C5621A4F4BD009C2F71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60E14C5821A4F4BD009C2F71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60E14C5921A4F4BD009C2F71 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		60E14C6421A4F563009C2F71 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		60E14C6521A4F563009C2F71 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		60E14C6721A4F563009C2F71 /* UIWindow+FRWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+FRWindow.h"; sourceTree = "<group>"; };
+		60E14C6821A4F563009C2F71 /* UIWindow+FRWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+FRWindow.m"; sourceTree = "<group>"; };
+		60E14C6921A4F563009C2F71 /* FRCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCategories.h; sourceTree = "<group>"; };
+		60E14C6B21A4F563009C2F71 /* FRShortcutMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRShortcutMacros.h; sourceTree = "<group>"; };
+		60E14C6E21A4F563009C2F71 /* FRActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRActionSheet.m; sourceTree = "<group>"; };
+		60E14C6F21A4F563009C2F71 /* FRActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRActionSheet.h; sourceTree = "<group>"; };
+		60E14C7121A4F563009C2F71 /* FRUIUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRUIUtility.m; sourceTree = "<group>"; };
+		60E14C7221A4F563009C2F71 /* FRUIUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRUIUtility.h; sourceTree = "<group>"; };
+		60E14C7421A4F563009C2F71 /* FRSign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRSign.m; sourceTree = "<group>"; };
+		60E14C7521A4F563009C2F71 /* FRSign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRSign.h; sourceTree = "<group>"; };
+		60E14C7621A4F563009C2F71 /* FRFunctional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRFunctional.h; sourceTree = "<group>"; };
+		60E14C7721A4F563009C2F71 /* FRKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,7 @@
 		60E14C4921A4F4BD009C2F71 /* FRKit */ = {
 			isa = PBXGroup;
 			children = (
+				60E14C6021A4F563009C2F71 /* FRKit */,
 				60E14C4A21A4F4BD009C2F71 /* AppDelegate.h */,
 				60E14C4B21A4F4BD009C2F71 /* AppDelegate.m */,
 				60E14C4D21A4F4BD009C2F71 /* ViewController.h */,
@@ -69,6 +89,100 @@
 				60E14C5921A4F4BD009C2F71 /* main.m */,
 			);
 			path = FRKit;
+			sourceTree = "<group>";
+		};
+		60E14C6021A4F563009C2F71 /* FRKit */ = {
+			isa = PBXGroup;
+			children = (
+				60E14C7721A4F563009C2F71 /* FRKit.h */,
+				60E14C6121A4F563009C2F71 /* FRCategories */,
+				60E14C6A21A4F563009C2F71 /* FRShortcut */,
+				60E14C6C21A4F563009C2F71 /* FRFunction */,
+			);
+			name = FRKit;
+			path = ../../FRKit;
+			sourceTree = "<group>";
+		};
+		60E14C6121A4F563009C2F71 /* FRCategories */ = {
+			isa = PBXGroup;
+			children = (
+				60E14C6221A4F563009C2F71 /* UIKit */,
+				60E14C6921A4F563009C2F71 /* FRCategories.h */,
+			);
+			path = FRCategories;
+			sourceTree = "<group>";
+		};
+		60E14C6221A4F563009C2F71 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				60E14C6321A4F563009C2F71 /* UIImage */,
+				60E14C6621A4F563009C2F71 /* UIWindow */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		60E14C6321A4F563009C2F71 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				60E14C6421A4F563009C2F71 /* UIImage+Color.h */,
+				60E14C6521A4F563009C2F71 /* UIImage+Color.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		60E14C6621A4F563009C2F71 /* UIWindow */ = {
+			isa = PBXGroup;
+			children = (
+				60E14C6721A4F563009C2F71 /* UIWindow+FRWindow.h */,
+				60E14C6821A4F563009C2F71 /* UIWindow+FRWindow.m */,
+			);
+			path = UIWindow;
+			sourceTree = "<group>";
+		};
+		60E14C6A21A4F563009C2F71 /* FRShortcut */ = {
+			isa = PBXGroup;
+			children = (
+				60E14C6B21A4F563009C2F71 /* FRShortcutMacros.h */,
+			);
+			path = FRShortcut;
+			sourceTree = "<group>";
+		};
+		60E14C6C21A4F563009C2F71 /* FRFunction */ = {
+			isa = PBXGroup;
+			children = (
+				60E14C6D21A4F563009C2F71 /* FEActionSheet */,
+				60E14C7021A4F563009C2F71 /* FRUIUtitlity */,
+				60E14C7321A4F563009C2F71 /* FRSign */,
+				60E14C7621A4F563009C2F71 /* FRFunctional.h */,
+			);
+			path = FRFunction;
+			sourceTree = "<group>";
+		};
+		60E14C6D21A4F563009C2F71 /* FEActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				60E14C6E21A4F563009C2F71 /* FRActionSheet.m */,
+				60E14C6F21A4F563009C2F71 /* FRActionSheet.h */,
+			);
+			path = FEActionSheet;
+			sourceTree = "<group>";
+		};
+		60E14C7021A4F563009C2F71 /* FRUIUtitlity */ = {
+			isa = PBXGroup;
+			children = (
+				60E14C7121A4F563009C2F71 /* FRUIUtility.m */,
+				60E14C7221A4F563009C2F71 /* FRUIUtility.h */,
+			);
+			path = FRUIUtitlity;
+			sourceTree = "<group>";
+		};
+		60E14C7321A4F563009C2F71 /* FRSign */ = {
+			isa = PBXGroup;
+			children = (
+				60E14C7421A4F563009C2F71 /* FRSign.m */,
+				60E14C7521A4F563009C2F71 /* FRSign.h */,
+			);
+			path = FRSign;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +256,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				60E14C4F21A4F4BD009C2F71 /* ViewController.m in Sources */,
+				60E14C7921A4F563009C2F71 /* UIWindow+FRWindow.m in Sources */,
+				60E14C7B21A4F563009C2F71 /* FRUIUtility.m in Sources */,
+				60E14C7821A4F563009C2F71 /* UIImage+Color.m in Sources */,
+				60E14C7C21A4F563009C2F71 /* FRSign.m in Sources */,
 				60E14C5A21A4F4BD009C2F71 /* main.m in Sources */,
 				60E14C4C21A4F4BD009C2F71 /* AppDelegate.m in Sources */,
+				60E14C7A21A4F563009C2F71 /* FRActionSheet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

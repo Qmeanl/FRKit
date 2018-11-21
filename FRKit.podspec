@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FRKit"
-  s.version      = "0.0.11"
+  s.version      = "0.0.12"
   s.platform       = :ios, "7.0"
   s.summary      = "iOS开发基础组件库"
   s.description  = <<-DESC

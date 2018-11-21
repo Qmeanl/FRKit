@@ -8,6 +8,6 @@
 
 #ifndef UIKit_FRCategories_h
 #define UIKit_FRCategories_h
-
-
+#import "UIImage+Color.h"
+#import "UIWindow+FRWindow.h"
 #endif /* UIKit_FRCategories_h */

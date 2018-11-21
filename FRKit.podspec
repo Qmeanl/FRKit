@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FRKit"
-  s.version      = "0.0.6"
+  s.version      = "0.0.7"
   s.platform       = :ios, "9.0"
   s.summary      = "iOS开发基础组件库"
   s.description  = <<-DESC
@@ -29,6 +29,7 @@ Pod::Spec.new do |s|
     # FRActionSheet
     founc.subspec 'FRActionSheet' do |ss|
       ss.source_files = "FRKit/FRFunctional/FRActionSheet/*.{h,m}"
+      ss.dependency "FRKit/FRCategories/UIKit/UIImage"
     end
 
     # FRUIUtility

@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/Qmeanl/FRKit"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.source       = { :git => "https://github.com/Qmeanl/FRKit.git", :tag =>s.version }
-  s.source_files = "*.{h,m}"
+  s.source_files = "FRKit/*.{h,m}"
 
  
 

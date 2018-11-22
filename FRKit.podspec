@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Qmeanl/FRKit.git", :tag =>s.version }
   s.source_files = "FRKit/FRKit.h"
   s.public_header_files = "FRKit/FRKit.h"
-  s.frameworks = "Foundation","UIKit"
+ 
 
   # 通用宏定义、快捷方法
   s.subspec 'FRShortcut' do |shortcut|

@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImage (Color)
 + (UIImage *)imageWithColor:(UIColor *)color;
@@ -19,4 +18,3 @@ NS_ASSUME_NONNULL_BEGIN
 - (UIImage *)grayImage;
 @end
 
-NS_ASSUME_NONNULL_END

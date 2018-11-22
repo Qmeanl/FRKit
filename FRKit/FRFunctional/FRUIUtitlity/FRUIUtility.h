@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
 
 @interface FRUIUtility : NSObject
 #pragma mark - # Alert
@@ -19,4 +18,3 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)showAlertWithTitle:(NSString *)title message:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitles:(NSArray *)otherButtonTitles actionHandler:(void (^)(NSInteger buttonIndex))actionHandler;
 @end
 
-NS_ASSUME_NONNULL_END

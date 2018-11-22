@@ -13,7 +13,6 @@
 @optional;
 - (void)actionSheet:(FRActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex;
 @end
-NS_ASSUME_NONNULL_BEGIN
 
 @interface FRActionSheet : UIView
 
@@ -60,4 +59,3 @@ destructiveButtonTitle:(NSString *)destructiveButtonTitle
 
 @end
 
-NS_ASSUME_NONNULL_END

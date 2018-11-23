@@ -8,5 +8,11 @@
 
 #ifndef FRCategories_h
 #define FRCategories_h
+
+// Foundation 常用分类
+#import "Foundation+FRCategories.h"
+
+// UIKit 常用分类
 #import "UIKit+FRCategories.h"
+
 #endif /* FRCategories_h */

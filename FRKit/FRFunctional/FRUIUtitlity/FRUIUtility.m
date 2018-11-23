@@ -7,9 +7,10 @@
 //
 
 #import "FRUIUtility.h"
-#import "UIWindow+FRWindow.h"
-
+#import "UIWindow+Extensions.h"
 @implementation FRUIUtility
+
+
 
 #pragma mark - # Alert
 + (void)showAlertWithTitle:(NSString *)title

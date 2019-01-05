@@ -27,7 +27,6 @@
     if ([value isKindOfClass:[NSNumber class]]) {
         return [value stringValue];
     }
-    
     return nil;
 }
 

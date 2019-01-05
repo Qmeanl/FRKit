@@ -30,8 +30,34 @@
 [self.navigationController pushViewController:vc animated:YES];\
 }
 
+// 利用 Runtime 实现自动归档 & 解档
+#define FRNSCodingRuntime_EncodeWithCoder(Class) \
+unsigned int outCount = 0;\
+Ivar *ivars = class_copyIvarList([Class class], &outCount);\
+for (int i = 0; i < outCount; i++) {\
+Ivar ivar = ivars[i];\
+NSString *key = [NSString stringWithUTF8String:ivar_getName(ivar)];\
+[aCoder encodeObject:[self valueForKey:key] forKey:key];\
+}\
+free(ivars);\
+\
 
-
+#define FRYNSCodingRuntime_InitWithCoder(Class)\
+if (self = [super init]) {\
+unsigned int outCount = 0;\
+Ivar *ivars = class_copyIvarList([Class class], &outCount);\
+for (int i = 0; i < outCount; i++) {\
+Ivar ivar = ivars[i];\
+NSString *key = [NSString stringWithUTF8String:ivar_getName(ivar)];\
+id value = [aDecoder decodeObjectForKey:key];\
+if (value) {\
+[self setValue:value forKey:key];\
+}\
+}\
+free(ivars);\
+}\
+return self;\
+\
 
 
 #endif /* FRShortcutMacros_h */

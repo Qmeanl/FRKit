@@ -10,6 +10,7 @@
 
 @interface NSDictionary (Extensions)
 
+//合并
 + (NSDictionary *)dictionaryMergeWith:(NSDictionary *)dict1 and:(NSDictionary *)dict2;
 
 - (NSDictionary *)dictionaryMergeWith:(NSDictionary *)dictionary;

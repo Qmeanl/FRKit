@@ -66,6 +66,7 @@
 		6004BB2321A7958000074DD0 /* UIControl+ActionBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 6004BAE421A7957F00074DD0 /* UIControl+ActionBlocks.m */; };
 		6004BB2421A7958000074DD0 /* UITextField+LengthLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6004BAE721A7957F00074DD0 /* UITextField+LengthLimit.m */; };
 		6004BB2521A7958000074DD0 /* UITextField+Select.m in Sources */ = {isa = PBXBuildFile; fileRef = 6004BAEA21A7957F00074DD0 /* UITextField+Select.m */; };
+		6042679D21E047E800E4A795 /* UITextView+DisableCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6042679C21E047E800E4A795 /* UITextView+DisableCopy.m */; };
 		60E14C4C21A4F4BD009C2F71 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E14C4B21A4F4BD009C2F71 /* AppDelegate.m */; };
 		60E14C4F21A4F4BD009C2F71 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E14C4E21A4F4BD009C2F71 /* ViewController.m */; };
 		60E14C5221A4F4BD009C2F71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E14C5021A4F4BD009C2F71 /* Main.storyboard */; };
@@ -200,6 +201,8 @@
 		6004BAE821A7957F00074DD0 /* UITextField+Select.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Select.h"; sourceTree = "<group>"; };
 		6004BAE921A7957F00074DD0 /* UITextField+LengthLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+LengthLimit.h"; sourceTree = "<group>"; };
 		6004BAEA21A7957F00074DD0 /* UITextField+Select.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Select.m"; sourceTree = "<group>"; };
+		6042679B21E047E800E4A795 /* UITextView+DisableCopy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+DisableCopy.h"; sourceTree = "<group>"; };
+		6042679C21E047E800E4A795 /* UITextView+DisableCopy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+DisableCopy.m"; sourceTree = "<group>"; };
 		60E14C4721A4F4BD009C2F71 /* FRKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FRKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E14C4A21A4F4BD009C2F71 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		60E14C4B21A4F4BD009C2F71 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -248,6 +251,7 @@
 		6004BA5221A7957F00074DD0 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				6004BA9F21A7957F00074DD0 /* Foundation+FRCategories.h */,
 				6004BA5321A7957F00074DD0 /* NSDictionary */,
 				6004BA5821A7957F00074DD0 /* NSBundle */,
 				6004BA5B21A7957F00074DD0 /* NSNotificationCenter */,
@@ -261,7 +265,6 @@
 				6004BA8921A7957F00074DD0 /* NSTimer */,
 				6004BA8C21A7957F00074DD0 /* NSObject */,
 				6004BA9A21A7957F00074DD0 /* NSDate */,
-				6004BA9F21A7957F00074DD0 /* Foundation+FRCategories.h */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -269,9 +272,9 @@
 		6004BA5321A7957F00074DD0 /* NSDictionary */ = {
 			isa = PBXGroup;
 			children = (
+				6004BA5621A7957F00074DD0 /* NSDictionary+SafeAccess.h */,
 				6004BA5421A7957F00074DD0 /* NSDictionary+SafeAccess.m */,
 				6004BA5521A7957F00074DD0 /* NSDictionary+Extensions.h */,
-				6004BA5621A7957F00074DD0 /* NSDictionary+SafeAccess.h */,
 				6004BA5721A7957F00074DD0 /* NSDictionary+Extensions.m */,
 			);
 			path = NSDictionary;
@@ -307,8 +310,8 @@
 		6004BA6121A7957F00074DD0 /* NSMutableDictionary */ = {
 			isa = PBXGroup;
 			children = (
-				6004BA6221A7957F00074DD0 /* NSMutableDictionary+SafeAccess.m */,
 				6004BA6321A7957F00074DD0 /* NSMutableDictionary+SafeAccess.h */,
+				6004BA6221A7957F00074DD0 /* NSMutableDictionary+SafeAccess.m */,
 			);
 			path = NSMutableDictionary;
 			sourceTree = "<group>";
@@ -317,12 +320,12 @@
 			isa = PBXGroup;
 			children = (
 				6004BA6521A7957F00074DD0 /* NSData+Gzip.h */,
+				6004BA6921A7957F00074DD0 /* NSData+Gzip.m */,
 				6004BA6621A7957F00074DD0 /* NSData+Encrypt.h */,
+				6004BA6B21A7957F00074DD0 /* NSData+Encrypt.m */,
+				6004BA6A21A7957F00074DD0 /* NSData+Hash.h */,
 				6004BA6721A7957F00074DD0 /* NSData+Hash.m */,
 				6004BA6821A7957F00074DD0 /* NSData+Base64.h */,
-				6004BA6921A7957F00074DD0 /* NSData+Gzip.m */,
-				6004BA6A21A7957F00074DD0 /* NSData+Hash.h */,
-				6004BA6B21A7957F00074DD0 /* NSData+Encrypt.m */,
 				6004BA6C21A7957F00074DD0 /* NSData+Base64.m */,
 			);
 			path = NSData;
@@ -331,8 +334,8 @@
 		6004BA6D21A7957F00074DD0 /* NSURL */ = {
 			isa = PBXGroup;
 			children = (
-				6004BA6E21A7957F00074DD0 /* NSURL+Params.m */,
 				6004BA6F21A7957F00074DD0 /* NSURL+Params.h */,
+				6004BA6E21A7957F00074DD0 /* NSURL+Params.m */,
 			);
 			path = NSURL;
 			sourceTree = "<group>";
@@ -340,23 +343,23 @@
 		6004BA7021A7957F00074DD0 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
+				6004BA7E21A7957F00074DD0 /* NSString+URL.h */,
 				6004BA7121A7957F00074DD0 /* NSString+URL.m */,
+				6004BA7D21A7957F00074DD0 /* NSString+Hash.h */,
 				6004BA7221A7957F00074DD0 /* NSString+Hash.m */,
 				6004BA7321A7957F00074DD0 /* NSString+StringPages.h */,
+				6004BA7C21A7957F00074DD0 /* NSString+StringPages.m */,
 				6004BA7421A7957F00074DD0 /* NSString+Contains.h */,
+				6004BA7B21A7957F00074DD0 /* NSString+Contains.m */,
 				6004BA7521A7957F00074DD0 /* NSString+NormalRegex.h */,
+				6004BA7A21A7957F00074DD0 /* NSString+NormalRegex.m */,
+				6004BA8021A7957F00074DD0 /* NSString+Base64.h */,
 				6004BA7621A7957F00074DD0 /* NSString+Base64.m */,
+				6004BA7F21A7957F00074DD0 /* NSString+Encrypt.h */,
 				6004BA7721A7957F00074DD0 /* NSString+Encrypt.m */,
+				6004BA8121A7957F00074DD0 /* NSString+PinYin.h */,
 				6004BA7821A7957F00074DD0 /* NSString+PinYin.m */,
 				6004BA7921A7957F00074DD0 /* NSString+Size.h */,
-				6004BA7A21A7957F00074DD0 /* NSString+NormalRegex.m */,
-				6004BA7B21A7957F00074DD0 /* NSString+Contains.m */,
-				6004BA7C21A7957F00074DD0 /* NSString+StringPages.m */,
-				6004BA7D21A7957F00074DD0 /* NSString+Hash.h */,
-				6004BA7E21A7957F00074DD0 /* NSString+URL.h */,
-				6004BA7F21A7957F00074DD0 /* NSString+Encrypt.h */,
-				6004BA8021A7957F00074DD0 /* NSString+Base64.h */,
-				6004BA8121A7957F00074DD0 /* NSString+PinYin.h */,
 				6004BA8221A7957F00074DD0 /* NSString+Size.m */,
 			);
 			path = NSString;
@@ -365,8 +368,8 @@
 		6004BA8321A7957F00074DD0 /* NSArray */ = {
 			isa = PBXGroup;
 			children = (
-				6004BA8421A7957F00074DD0 /* NSArray+SafeAccess.m */,
 				6004BA8521A7957F00074DD0 /* NSArray+SafeAccess.h */,
+				6004BA8421A7957F00074DD0 /* NSArray+SafeAccess.m */,
 			);
 			path = NSArray;
 			sourceTree = "<group>";
@@ -374,8 +377,8 @@
 		6004BA8621A7957F00074DD0 /* NSMutableArray */ = {
 			isa = PBXGroup;
 			children = (
-				6004BA8721A7957F00074DD0 /* NSMutableArray+SafeAccess.m */,
 				6004BA8821A7957F00074DD0 /* NSMutableArray+SafeAccess.h */,
+				6004BA8721A7957F00074DD0 /* NSMutableArray+SafeAccess.m */,
 			);
 			path = NSMutableArray;
 			sourceTree = "<group>";
@@ -383,8 +386,8 @@
 		6004BA8921A7957F00074DD0 /* NSTimer */ = {
 			isa = PBXGroup;
 			children = (
-				6004BA8A21A7957F00074DD0 /* NSTimer+Block.m */,
 				6004BA8B21A7957F00074DD0 /* NSTimer+Block.h */,
+				6004BA8A21A7957F00074DD0 /* NSTimer+Block.m */,
 			);
 			path = NSTimer;
 			sourceTree = "<group>";
@@ -392,12 +395,12 @@
 		6004BA8C21A7957F00074DD0 /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
-				6004BA8D21A7957F00074DD0 /* NSObject+KVOBlock.m */,
-				6004BA8E21A7957F00074DD0 /* NSObject+Reflection.h */,
-				6004BA8F21A7957F00074DD0 /* NSObject+EasyCopy.m */,
-				6004BA9021A7957F00074DD0 /* NSObject+Reflection.m */,
 				6004BA9121A7957F00074DD0 /* NSObject+KVOBlock.h */,
+				6004BA8D21A7957F00074DD0 /* NSObject+KVOBlock.m */,
 				6004BA9221A7957F00074DD0 /* NSObject+EasyCopy.h */,
+				6004BA8F21A7957F00074DD0 /* NSObject+EasyCopy.m */,
+				6004BA8E21A7957F00074DD0 /* NSObject+Reflection.h */,
+				6004BA9021A7957F00074DD0 /* NSObject+Reflection.m */,
 				6004BA9321A7957F00074DD0 /* TLAssosiation */,
 			);
 			path = NSObject;
@@ -407,11 +410,11 @@
 			isa = PBXGroup;
 			children = (
 				6004BA9421A7957F00074DD0 /* FRDeallocTask.h */,
-				6004BA9521A7957F00074DD0 /* NSObject+Dealloc.m */,
-				6004BA9621A7957F00074DD0 /* NSObject+Association.m */,
 				6004BA9721A7957F00074DD0 /* FRDeallocTask.m */,
-				6004BA9821A7957F00074DD0 /* NSObject+Association.h */,
 				6004BA9921A7957F00074DD0 /* NSObject+Dealloc.h */,
+				6004BA9521A7957F00074DD0 /* NSObject+Dealloc.m */,
+				6004BA9821A7957F00074DD0 /* NSObject+Association.h */,
+				6004BA9621A7957F00074DD0 /* NSObject+Association.m */,
 			);
 			path = TLAssosiation;
 			sourceTree = "<group>";
@@ -419,9 +422,9 @@
 		6004BA9A21A7957F00074DD0 /* NSDate */ = {
 			isa = PBXGroup;
 			children = (
+				6004BA9D21A7957F00074DD0 /* NSDate+Extensions.h */,
 				6004BA9B21A7957F00074DD0 /* NSDate+Extensions.m */,
 				6004BA9C21A7957F00074DD0 /* NSDate+Relation.h */,
-				6004BA9D21A7957F00074DD0 /* NSDate+Extensions.h */,
 				6004BA9E21A7957F00074DD0 /* NSDate+Relation.m */,
 			);
 			path = NSDate;
@@ -430,6 +433,7 @@
 		6004BAA021A7957F00074DD0 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				6004BAE521A7957F00074DD0 /* UIKit+FRCategories.h */,
 				6004BAA121A7957F00074DD0 /* UIImage */,
 				6004BAA621A7957F00074DD0 /* UIScrollView */,
 				6004BAAD21A7957F00074DD0 /* UIWindow */,
@@ -446,7 +450,6 @@
 				6004BADA21A7957F00074DD0 /* UIViewController */,
 				6004BADF21A7957F00074DD0 /* UINavigationController */,
 				6004BAE221A7957F00074DD0 /* UIControl */,
-				6004BAE521A7957F00074DD0 /* UIKit+FRCategories.h */,
 				6004BAE621A7957F00074DD0 /* UITextField */,
 			);
 			path = UIKit;
@@ -455,9 +458,9 @@
 		6004BAA121A7957F00074DD0 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
+				6004BAA421A7957F00074DD0 /* UIImage+Size.h */,
 				6004BAA221A7957F00074DD0 /* UIImage+Size.m */,
 				6004BAA321A7957F00074DD0 /* UIImage+Color.h */,
-				6004BAA421A7957F00074DD0 /* UIImage+Size.h */,
 				6004BAA521A7957F00074DD0 /* UIImage+Color.m */,
 			);
 			path = UIImage;
@@ -466,12 +469,12 @@
 		6004BAA621A7957F00074DD0 /* UIScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				6004BAA721A7957F00074DD0 /* UIScrollView+Pages.m */,
-				6004BAA821A7957F00074DD0 /* UIScrollView+Extensions.m */,
-				6004BAA921A7957F00074DD0 /* UIScrollView+iOS11Fixed.m */,
-				6004BAAA21A7957F00074DD0 /* UIScrollView+Extensions.h */,
 				6004BAAB21A7957F00074DD0 /* UIScrollView+Pages.h */,
+				6004BAA721A7957F00074DD0 /* UIScrollView+Pages.m */,
+				6004BAAA21A7957F00074DD0 /* UIScrollView+Extensions.h */,
+				6004BAA821A7957F00074DD0 /* UIScrollView+Extensions.m */,
 				6004BAAC21A7957F00074DD0 /* UIScrollView+iOS11Fixed.h */,
+				6004BAA921A7957F00074DD0 /* UIScrollView+iOS11Fixed.m */,
 			);
 			path = UIScrollView;
 			sourceTree = "<group>";
@@ -479,8 +482,8 @@
 		6004BAAD21A7957F00074DD0 /* UIWindow */ = {
 			isa = PBXGroup;
 			children = (
-				6004BAAE21A7957F00074DD0 /* UIWindow+Extensions.m */,
 				6004BAAF21A7957F00074DD0 /* UIWindow+Extensions.h */,
+				6004BAAE21A7957F00074DD0 /* UIWindow+Extensions.m */,
 			);
 			path = UIWindow;
 			sourceTree = "<group>";
@@ -497,10 +500,10 @@
 		6004BAB321A7957F00074DD0 /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
-				6004BAB421A7957F00074DD0 /* UIColor+Extensions.m */,
-				6004BAB521A7957F00074DD0 /* UIColor+Gradient.m */,
-				6004BAB621A7957F00074DD0 /* UIColor+Gradient.h */,
 				6004BAB721A7957F00074DD0 /* UIColor+Extensions.h */,
+				6004BAB421A7957F00074DD0 /* UIColor+Extensions.m */,
+				6004BAB621A7957F00074DD0 /* UIColor+Gradient.h */,
+				6004BAB521A7957F00074DD0 /* UIColor+Gradient.m */,
 			);
 			path = UIColor;
 			sourceTree = "<group>";
@@ -517,14 +520,14 @@
 		6004BABB21A7957F00074DD0 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				6004BAC021A7957F00074DD0 /* UIView+Extensions.h */,
 				6004BABC21A7957F00074DD0 /* UIView+Extensions.m */,
+				6004BAC121A7957F00074DD0 /* UIView+Frame.h */,
 				6004BABD21A7957F00074DD0 /* UIView+Frame.m */,
 				6004BABE21A7957F00074DD0 /* UIView+Screenshot.h */,
-				6004BABF21A7957F00074DD0 /* UIView+TipView.m */,
-				6004BAC021A7957F00074DD0 /* UIView+Extensions.h */,
-				6004BAC121A7957F00074DD0 /* UIView+Frame.h */,
-				6004BAC221A7957F00074DD0 /* UIView+TipView.h */,
 				6004BAC321A7957F00074DD0 /* UIView+Screenshot.m */,
+				6004BAC221A7957F00074DD0 /* UIView+TipView.h */,
+				6004BABF21A7957F00074DD0 /* UIView+TipView.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -551,11 +554,13 @@
 			isa = PBXGroup;
 			children = (
 				6004BACB21A7957F00074DD0 /* UITextView+Select.h */,
-				6004BACC21A7957F00074DD0 /* UITextView+Placeholder.m */,
-				6004BACD21A7957F00074DD0 /* UITextView+LengthLimit.m */,
-				6004BACE21A7957F00074DD0 /* UITextView+Placeholder.h */,
 				6004BACF21A7957F00074DD0 /* UITextView+Select.m */,
+				6004BACE21A7957F00074DD0 /* UITextView+Placeholder.h */,
+				6004BACC21A7957F00074DD0 /* UITextView+Placeholder.m */,
 				6004BAD021A7957F00074DD0 /* UITextView+LengthLimit.h */,
+				6004BACD21A7957F00074DD0 /* UITextView+LengthLimit.m */,
+				6042679B21E047E800E4A795 /* UITextView+DisableCopy.h */,
+				6042679C21E047E800E4A795 /* UITextView+DisableCopy.m */,
 			);
 			path = UITextView;
 			sourceTree = "<group>";
@@ -590,10 +595,10 @@
 		6004BADA21A7957F00074DD0 /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
-				6004BADB21A7957F00074DD0 /* UIViewController+NavBar.m */,
-				6004BADC21A7957F00074DD0 /* UIViewController+TipView.m */,
 				6004BADD21A7957F00074DD0 /* UIViewController+NavBar.h */,
+				6004BADB21A7957F00074DD0 /* UIViewController+NavBar.m */,
 				6004BADE21A7957F00074DD0 /* UIViewController+TipView.h */,
+				6004BADC21A7957F00074DD0 /* UIViewController+TipView.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -601,8 +606,8 @@
 		6004BADF21A7957F00074DD0 /* UINavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				6004BAE021A7957F00074DD0 /* UINavigationController+Extensions.m */,
 				6004BAE121A7957F00074DD0 /* UINavigationController+Extensions.h */,
+				6004BAE021A7957F00074DD0 /* UINavigationController+Extensions.m */,
 			);
 			path = UINavigationController;
 			sourceTree = "<group>";
@@ -619,9 +624,9 @@
 		6004BAE621A7957F00074DD0 /* UITextField */ = {
 			isa = PBXGroup;
 			children = (
+				6004BAE921A7957F00074DD0 /* UITextField+LengthLimit.h */,
 				6004BAE721A7957F00074DD0 /* UITextField+LengthLimit.m */,
 				6004BAE821A7957F00074DD0 /* UITextField+Select.h */,
-				6004BAE921A7957F00074DD0 /* UITextField+LengthLimit.h */,
 				6004BAEA21A7957F00074DD0 /* UITextField+Select.m */,
 			);
 			path = UITextField;
@@ -867,6 +872,7 @@
 				6004BB0F21A7958000074DD0 /* UIWindow+Extensions.m in Sources */,
 				6004BB2221A7958000074DD0 /* UINavigationController+Extensions.m in Sources */,
 				6004BB1221A7958000074DD0 /* UIColor+Gradient.m in Sources */,
+				6042679D21E047E800E4A795 /* UITextView+DisableCopy.m in Sources */,
 				60E14C4C21A4F4BD009C2F71 /* AppDelegate.m in Sources */,
 				60E14CE621A51B02009C2F71 /* FRSign.m in Sources */,
 				6004BAFD21A7958000074DD0 /* NSString+StringPages.m in Sources */,

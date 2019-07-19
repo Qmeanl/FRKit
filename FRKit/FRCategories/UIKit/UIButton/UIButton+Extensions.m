@@ -41,8 +41,9 @@
         buttonSize.height = MAX(imageSize.height, titleSize.height);
     }
     else {
-        CGFloat imageOffsetX = titleSize.width > imageSize.width ? (titleSize.width - imageSize.width) / 2.0 : 0;
+        CGFloat imageOffsetXR = titleSize.width > imageSize.width ? (titleSize.width - imageSize.width) / 2.0 : 0;
         CGFloat imageOffsetY = imageSize.height / 2;
+        CGFloat imageOffsetX = imageSize.width + imageOffsetXR;
         
         
         CGFloat titleOffsetXR = titleSize.width > imageSize.width ? 0 : (imageSize.width - titleSize.width) / 2.0;
@@ -50,11 +51,11 @@
         CGFloat titleOffsetY = titleSize.height / 2;
         
         if (position == FRButtonImagePositionTop) {
-            self.imageEdgeInsets = UIEdgeInsetsMake(-imageOffsetY, imageOffsetX, imageOffsetY, -imageOffsetX);
+            self.imageEdgeInsets = UIEdgeInsetsMake(-imageOffsetY, imageOffsetXR, imageOffsetY, -imageOffsetX);
             self.titleEdgeInsets = UIEdgeInsetsMake(titleOffsetY, -titleOffsetX, -titleOffsetY, -titleOffsetXR);
         }
         else {
-            self.imageEdgeInsets = UIEdgeInsetsMake(imageOffsetY, imageOffsetX, -imageOffsetY, -imageOffsetX);
+            self.imageEdgeInsets = UIEdgeInsetsMake(imageOffsetY, imageOffsetXR, -imageOffsetY, -imageOffsetX);
             self.titleEdgeInsets = UIEdgeInsetsMake(-titleOffsetY, -titleOffsetX, titleOffsetY, -titleOffsetXR);
         }
         buttonSize.width = MAX(imageSize.width, titleSize.width);
